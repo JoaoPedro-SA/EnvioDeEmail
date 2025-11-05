@@ -22,7 +22,7 @@ def enviarEmail(destinatario, assunto, mensagem):
           msg.set_content(mensagem)
 
 
-          with smtplib.SMTP_SSL('smtp.gmail.com', 443) as email:
+          with smtplib.SMTP_SSL('smtp.gmail.com', 465) as email:
                email.login(remetente, senha)
                email.send_message(msg)
           
