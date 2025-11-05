@@ -3,3 +3,4 @@ python-dotenv
 email-validator
 setuptools
 wheel
+gunicorn
