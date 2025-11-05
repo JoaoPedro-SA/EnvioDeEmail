@@ -22,10 +22,14 @@ def enviarEmail(destinatario, assunto, mensagem):
           msg.set_content(mensagem)
 
 
-          with smtplib.SMTP_SSL('smtp.gmail.com', 465) as email:
+          # with smtplib.SMTP_SSL('smtp.gmail.com', 465) as email:
+          #      email.login(remetente, senha)
+          #      email.send_message(msg)
+          
+          with smtplib.SMTP("localhost", 1025) as email: 
                email.login(remetente, senha)
                email.send_message(msg)
-
+               
           return "Email enviado com sucesso!"
 
      except Exception as e:
