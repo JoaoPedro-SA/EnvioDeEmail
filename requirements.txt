@@ -1,17 +1,5 @@
-# Bibliotecas básicas
-numpy==1.24.3
-pandas==2.0.2
-matplotlib==3.7.1
-
-# Web frameworks
-flask==2.3.2
-requests==2.31.0
-
-# Processamento de dados
-scikit-learn==1.2.2
-scipy==1.10.1
-
-# Ferramentas de desenvolvimento
-pytest==7.3.1
-python-dotenv==1.0.0
-
+Flask
+python-dotenv
+email-validator
+setuptools
+wheel
