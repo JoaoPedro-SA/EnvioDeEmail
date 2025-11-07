@@ -51,7 +51,6 @@ def mandarEmail3():
 def mandarSenha():
      try: 
          return codificarSenhaEmail(),200
-     
      except Exception as e:
           return jsonify({'erro': str(e)}), 500
 

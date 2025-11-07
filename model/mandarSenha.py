@@ -32,8 +32,8 @@ def codificarSenhaEmail():
     # Só para teste: decodifica de volta
     senha_decodificada = f.decrypt(senha_codificada).decode()
 
-    print("Senha codificada:", senha_codificada_str)
-    print("Senha decodificada:", senha_decodificada)
+    # print("Senha codificada:", senha_codificada_str)
+    # print("Senha decodificada:", senha_decodificada)
 
     # Retorna um dicionário pronto para converter em JSON
     return {"senha": senha_codificada_str}
